@@ -12,6 +12,7 @@ const navLinkClass = ({ isActive }) =>
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const logoSrc = `${import.meta.env.BASE_URL}images/rentify-logo.png`;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -19,7 +20,7 @@ const Navbar = () => {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link className="flex items-center gap-3" to="/">
             <img
-              src="/images/rentify-logo.png"
+              src={logoSrc}
               width="170"
               height="30"
               className="inline-block align-top"
