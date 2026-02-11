@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background: linear-gradient(120deg, rgba(255, 244, 234, 0.9), rgba(221, 235, 255, 0.9));
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+}
